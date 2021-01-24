@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<title>Alternativecircle</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="owl/owl.carousel.css">
+  <link rel="stylesheet" type="text/css" href="owl/owl.theme.css">
+  <link rel="stylesheet" type="text/css" href="css/animate.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+</head>
+<body class="home">
+
+
+	<nav class="navbar navbar-expand-md bg-white navbar-light fixed-top ac-nav">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="hamburger"><i class="fa fa-bars" aria-hidden="true"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+	        <li class="nav-item active"><a class="nav-link nav-txt" href="index.html" style="color:#000000;">Home</a></li>
+	        <li class="nav-item"><a class="nav-link nav-txt" href="about.html" style="color:#000000;">About Us</a></li>
+	        <li class="nav-item"><a class="nav-link nav-txt" href="press.html" style="color:#000000;">Press</a></li>
+	        <li class="nav-item"><a class="nav-link nav-txt" href="contact.html" style="color:#000000;">Contact</a></li>
+        </ul>
+        </div>
+      </div>
+    </nav>
+
+
+	<div class="page-banner" style="background-image: url(images/banner-contact.jpg);">
+	   <div class="container">
+      <h1 class="page-heading text-center">Contact Us</h1> 
+     </div>
+	</div>
+
+
+
+  <div class="triangles">
+    <img src="images/triangles1.png">
+  </div>
+
+  <div class="container text-center">
+    <h2 class="section-heading contact-heading">Let's get in touch</h2>
+  </div>
+
+  <div class="section contact-form">
+  <div class="container">
+    <div class="form-wrapper">
+        <form id="frm-contact" action="contact.php" method="post" onsubmit="return false;">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input type="text" class="inputText" name="username" />
+              <span class="floating-label">Your name</span>
+            </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div class="form-group">
+              <input type="text" class="inputText" name="email" />
+              <span class="floating-label">Your email address</span>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <div class="form-group">
+            <input type="text" class="inputText" name="subject" />
+            <span class="floating-label">Your subject</span>
+          </div>
+          </div>
+
+
+          <div class="col-sm-12">
+            <div class="form-group">
+            <textarea class="inputText" name="message" rows="4"></textarea>
+            <span class="floating-label">Your message</span>
+          </div>
+          </div>
+
+          <div class="col-sm-12">
+            <div id="responses"></div>
+          </div>
+
+          <div class="col-sm-12">
+          <div class="text-center">
+            <a href="javascript:void(0)" onclick="processForm()" class="btn-send text-uppercase">Send</a>
+          </div>
+          </div>
+          
+
+        </div>
+
+        
+        </form>
+
+        <div id="thankyou" style="display: none;">
+          <div class="sent-success text-green">
+          <p>Your message has been sent to our team. We will get back to you within 12 hours</p>
+        </div>
+        </div>
+        
+        
+    </div>
+  </div>
+  </div>
+
+
+  <div class="map">
+    <img src="images/map.jpg">
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="triangles" style="margin-bottom: -200px;">
+    <img src="images/triangles1.png">
+  </div> -->
+
+
+  <div class="footer">
+  <div class="container text-center">
+    <h4><strong>Alternative</strong>Circle</h4>
+    <ul class="footer-menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About us</a></li>
+      <li><a href="press.html">Press</a></li>
+      <!-- <li><a href="">Careers</a></li> -->
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <p class="location">&copy; 2017 Alternative Circle | WorkStyle Africa 7th Floor, The Address,Muthangari Drive,&nbsp;Westlands-Nairobi</p>
+
+    <p class="social-links">
+      <a href="https://www.facebook.com/Shikaapp" target="_blank"><i class="fa fa-facebook-square"></i></a>
+      <a href="https://twitter.com/Shika_app" target="_blank"><i class="fa fa-twitter-square"></i></a>
+      <a href="https://www.instagram.com/shika_app/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+    </p>
+
+  </div>
+  </div>
+	
+
+
+	
+
+
+
+
+	
+
+	
+
+
+	
+	
+
+	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</body>
+</html>
+<script type="text/javascript">
+  $(function(){
+    //floating labels logic
+    $('.inputText').focus( function(){
+        $(this).parent().find('.floating-label').addClass('floating');
+    });
+
+    $('.inputText').blur( function(){
+        $('.inputText').each( function(){
+          if($(this).val() == ''){
+            $(this).parent().find('.floating-label').removeClass('floating');
+          }else{
+            $(this).parent().find('.floating-label').addClass('floating');
+          }
+      });
+    });
+  });
+
+function processForm(){
+    var frm = $('#frm-contact');
+    $.ajax({
+      type: 'POST',
+      url: frm.attr('action'),
+      data: frm.serialize(),
+      dataType: 'json',
+      success: function(response){
+        console.log(response.status);
+        if(response.status == 1){
+          //handle success
+          $('#frm-contact').html($('#thankyou').html());
+        }else{
+          $('#responses').html(response.message);
+        }
+      }
+    })
+}
+</script>
+
+
+<!--<script>-->
+<!--  var header = $(".ac-nav");-->
+<!--  var headerScroll = "header-scrolled";-->
+  
+<!--  jQuery(document).scroll( function() {-->
+<!--    if($(this).scrollTop() > 0) {-->
+        
+<!--        header.addClass(headerScroll);-->
+
+<!--    }-->
+<!--    else {-->
+
+<!--        header.removeClass(headerScroll);-->
+                
+<!--    }-->
+<!--  });-->
+  
+<!--</script>-->
