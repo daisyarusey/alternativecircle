@@ -12,7 +12,11 @@
   <link rel="stylesheet" type="text/css" href="css/animate.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
-	<script src="js/parallax.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv04ynFKT8Nsp8khjkAtY4SFH0sFFZkKw&callback=initMap&libraries=&v=weekly"
+  defer
+></script>
 </head>
 <body class="home">
 
@@ -114,8 +118,8 @@
   </div>
 
 
-  <div class="map">
-    <img src="images/map.jpg">
+  <div id="map">
+    <!-- <img src="images/map.jpg"> -->
   </div>
 
 
@@ -218,21 +222,21 @@ function processForm(){
 </script>
 
 
-<!--<script>-->
-<!--  var header = $(".ac-nav");-->
-<!--  var headerScroll = "header-scrolled";-->
-  
-<!--  jQuery(document).scroll( function() {-->
-<!--    if($(this).scrollTop() > 0) {-->
-        
-<!--        header.addClass(headerScroll);-->
-
-<!--    }-->
-<!--    else {-->
-
-<!--        header.removeClass(headerScroll);-->
-                
-<!--    }-->
-<!--  });-->
-  
-<!--</script>-->
+<script>
+  // Initialize and add the map
+  function initMap() {
+    // The location of Uluru
+    const uluru = { lat:-1.259831510406781, lng: 36.78110466347603 };
+    // -1.259831510406781, 36.78110466347603
+    // The map, centered at Uluru
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 20,
+      center: uluru,
+    });
+    // The marker, positioned at Uluru
+    const marker = new google.maps.Marker({
+      position: uluru,
+      map: map,
+    });
+  }
+</script>
