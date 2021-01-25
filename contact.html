@@ -221,21 +221,21 @@ function processForm(){
 }
 </script>
 
-
+<!-- Map location -->
 <script>
   // Initialize and add the map
   function initMap() {
-    // The location of Uluru
-    const uluru = { lat:-1.259831510406781, lng: 36.78110466347603 };
+    // The location of Workstyle
+    const loct = { lat:-1.259831510406781, lng: 36.78110466347603 };
     // -1.259831510406781, 36.78110466347603
-    // The map, centered at Uluru
+    // The map, centered at workstyle
     const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 20,
-      center: uluru,
+      zoom: 18,
+      center: loct,
     });
     // The marker, positioned at Uluru
     const marker = new google.maps.Marker({
-      position: uluru,
+      position: loct,
       map: map,
     });
   }
