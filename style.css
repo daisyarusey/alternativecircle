@@ -137,6 +137,12 @@ strong{ font-weight: 900; }
 .dark-bg{
     background: #132d46; color: #fff;
 }
+.image-round{
+  border-radius: 50%;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  
+}
 
 .white-label{ position: absolute; right: 0; background: #fff; padding: 25px 30px; color: #132d46; z-index: 10; }
 .green-label{ position: absolute; left: 0; background: #35b199; color: #fff; padding: 0 15px; }
@@ -293,7 +299,14 @@ a.more{ font-size: 14px; font-weight: 700; }
       border-color:#000000;
       /* background-color:#122c47 */
    } 
+   .product{
+    height: 40%;
+  }
    
+}
+
+.product{
+  height: 60%;
 }
 
 
