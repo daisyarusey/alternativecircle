@@ -18,6 +18,3 @@ if(!isset($_REQUEST['message']) || empty($_REQUEST['message'])){
 }
 
 print_r(json_encode(array('status'=> 1, 'message' => 'Your message has been sent to our team. We will get back to you within 12 hours'))); exit;
-
-
-?>
