@@ -60,7 +60,7 @@
   <div class="section contact-form">
   <div class="container">
     <div class="form-wrapper">
-        <form id="frm-contact" action="contact.php" method="post" onsubmit="return false;">
+        <!-- <form id="frm-contact" action="contact.php" method="post" onsubmit="return false;">
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
@@ -96,7 +96,7 @@
 
           <div class="col-sm-12">
           <div class="text-center">
-            <a href="javascript:void(0)" onclick="processForm()" class="btn-send text-uppercase">Send</a>
+            <a href="javascript:void(0)" onclick="processForm()" name="submit" value="Submit" class="btn-send text-uppercase">Send</a>
           </div>
           </div>
           
@@ -104,7 +104,14 @@
         </div>
 
         
-        </form>
+        </form> -->
+
+        <form role="form" action="contact.php" method="post">
+          <input name="name" required="required" type="text" placeholder="Enter Your Name" />
+          <input name="email" required="required" type="email" placeholder="Email ID"/>
+          <input name="mobile" required="required" type="text" placeholder="Enter Mobile No"/>
+          <textarea name="message" placeholder="Enter Any Message"></textarea>
+          <input name="submit" type="submit" value="Send a Mail" /></form>
 
         <div id="thankyou" style="display: none;">
           <div class="sent-success text-green">
