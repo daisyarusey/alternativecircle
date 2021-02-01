@@ -302,6 +302,9 @@ a.more{ font-size: 14px; font-weight: 700; }
 
 .green-label.mobile{ display: none; }
 
+.product{
+  height: 60%;
+}
 
 @media only screen and (max-width: 768px) {
   .navbar .navbar-toggler {
@@ -328,9 +331,8 @@ a.more{ font-size: 14px; font-weight: 700; }
   }
 }
 
-.product{
-  height: 70%;
-}
+
+
 
 
 /*Media Queries*/
