@@ -303,8 +303,12 @@ a.more{ font-size: 14px; font-weight: 700; }
 .green-label.mobile{ display: none; }
 
 .product{
-  height: 60%;
-}
+  height: 80%;
+  width: 100%;
+  background-image: url(images/Oye-Banner.png);
+     background-repeat: no-repeat;
+     background-size: cover;
+    }
 
 @media only screen and (max-width: 768px) {
   .navbar .navbar-toggler {
