@@ -313,7 +313,9 @@ a.more{ font-size: 14px; font-weight: 700; }
    } 
    .product{
      background-image: url(images/oyebanner-mobile.png);
-   }
+     background-repeat: no-repeat;
+     background-size: cover;
+   
   }
    
   .mission{
