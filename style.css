@@ -316,6 +316,8 @@ a.more{ font-size: 14px; font-weight: 700; }
       /* background-color:#122c47 */
    } 
    .product{
+    height: 60%;
+    width: 100%;
      background-image: url(images/oyebanner-mobile.png);
      background-repeat: no-repeat;
      background-size: cover;
