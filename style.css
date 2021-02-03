@@ -303,9 +303,9 @@ a.more{ font-size: 14px; font-weight: 700; }
 .green-label.mobile{ display: none; }
 
 .product{
-  height: 80%;
+  height: 70%;
   width: 100%;
-  background-image: url(images/Oye-Banner.png);
+  background-image: url(images/Oye_Banner.png);
      background-repeat: no-repeat;
      background-size: cover;
     }
