@@ -303,9 +303,13 @@ a.more{ font-size: 14px; font-weight: 700; }
 .green-label.mobile{ display: none; }
 
 .product{
-  height: 70%;
-  width: 100%;
-  background-image: url(images/Oye_Banner.png);
+    margin: 0 auto;  
+    padding-bottom: 100px; 
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/Oye_Banner.png);
      background-repeat: no-repeat;
      background-size: cover;
     }
@@ -326,13 +330,18 @@ a.more{ font-size: 14px; font-weight: 700; }
    
   .mission{
     /* position: relative;  */
-    height: 100%;
+    
     overflow: hidden;
     background-image: url(images/zach-vessels-cropped.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: white;
     margin-top: 27%;
+    padding-bottom: 100px; 
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
   .mission-content{
