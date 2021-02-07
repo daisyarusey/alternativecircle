@@ -13,7 +13,6 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script type="text/javascript" src="js/jquery-2.2.0.min.js"></script>
   <script src="js/parallax.min.js"></script>
-  <script src="js/form.js"></script>
   <script
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAv04ynFKT8Nsp8khjkAtY4SFH0sFFZkKw&callback=initMap&libraries=&v=weekly"
   defer
@@ -65,20 +64,20 @@
         <div class="row">
           <div class="col-sm-12">
             <div class="form-group">
-              <input type="text" class="inputText" name="username" />
+              <input type="text" class="inputText" name="username" required />
               <span class="floating-label">Your name</span>
             </div>
           </div>
 
           <div class="col-sm-12">
             <div class="form-group">
-              <input type="text" class="inputText" name="email" />
+              <input type="text" class="inputText" name="email" required />
               <span class="floating-label">Your email address</span>
             </div>
           </div>
           <div class="col-sm-12">
             <div class="form-group">
-            <input type="text" class="inputText" name="subject" />
+            <input type="text" class="inputText" name="subject" required/>
             <span class="floating-label">Your subject</span>
           </div>
           </div>
@@ -86,7 +85,7 @@
 
           <div class="col-sm-12">
             <div class="form-group">
-            <textarea class="inputText" name="message" rows="4"></textarea>
+            <textarea class="inputText" name="message" rows="4" required></textarea>
             <span class="floating-label">Your message</span>
           </div>
           </div>
@@ -97,7 +96,7 @@
 
           <div class="col-sm-12">
           <div class="text-center">
-            <a href="javascript:void(0)"  name="submit" value="Submit" class="btn-send text-uppercase">Send</a>
+            <a href="javascript:void(0)" ><input onclick="processForm()" type="submit" name="submit" value="Submit" class="btn-send text-uppercase"></a>
           </div>
           </div>
           
@@ -110,11 +109,6 @@
         <div id="thankyou" style="display: none;">
           <div class="sent-success text-green">
           <p>Your message has been sent to our team. We will get back to you within 12 hours</p>
-        </div>
-        </div>
-        <div id="error" style="display: none;">
-          <div class="sent-success text-green">
-          <p>Sorry there was an error sending your form. </p>
         </div>
         </div>
         
