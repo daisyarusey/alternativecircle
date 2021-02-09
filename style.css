@@ -312,6 +312,7 @@ a.more{ font-size: 14px; font-weight: 700; }
     background-image: url(images/Oye_Banner.png);
      background-repeat: no-repeat;
      background-size: cover;
+     
     }
 
 @media only screen and (max-width: 768px) {
@@ -325,6 +326,7 @@ a.more{ font-size: 14px; font-weight: 700; }
      background-image: url(images/oyebanner-mobile.png);
      background-repeat: no-repeat;
      background-size: cover;
+     background-position: center;
    
   }
    
@@ -349,7 +351,12 @@ a.more{ font-size: 14px; font-weight: 700; }
   }
 }
 
-
+.contact-top{
+  background-image: url(images/zach-vessels-contact.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 
 
