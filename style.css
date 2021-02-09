@@ -13,7 +13,10 @@ strong{ font-weight: 900; }
   font-size: 30px;
   margin: 5px;
   }
-
+.page-heading{
+  font-size:100px;
+  font-weight: 1000;
+}
 .nav-txt {
   font-weight: 700;
   font-size: 20px ;
